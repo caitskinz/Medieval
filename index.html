@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
     <title>⚔️ Medieval Bingo ⚔️</title>
     <style>
         :root {
@@ -40,19 +43,32 @@
             align-items: center;
         }
 
+        .medievalsharp-regular {
+            font-family: "MedievalSharp", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .unifrakturmaguntia-regular {
+            font-family: "UnifrakturMaguntia", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+
+
         .logo {
             display: block;
-            width: min(240px, 70%);
             height: auto;
             margin-bottom: 5px;
             padding-bottom: 0;
         }
 
         h1 {
+            font-family: "UnifrakturMaguntia", cursive;
             font-size: 22px;
             margin: 0 0 10px;
             text-align: center;
-            font-weight: 900;
             letter-spacing: 1px;
             color: #f3efe3;
         }
@@ -234,7 +250,7 @@
 
 <body>
     <header class="topbar">
-        <img class="logo" src="/Users/caitlinwells/Downloads/Obra Letra.png" alt="Medieval Bingo Logo" />
+        <h1 class="medievalsharp-regular">⚔️ Medieval Bingo ⚔️</h1>
         <div class="actions">
             <button id="newBoardBtn" type="button">Reshuffle</button>
             <button id="resetTicksBtn" type="button">Clear</button>
