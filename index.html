@@ -29,24 +29,18 @@
                 Helvetica,
                 Arial,
                 sans-serif;
-            background: #29304e;
+            background: #2d4a2f;
             color: #111;
         }
 
         .topbar {
-            background: #b22222;
+            background: #7a9a4a;
             padding: 14px 14px 10px;
-            border-bottom: 2px dashed #f3efe3;
+            border-bottom: 2px dashed #f2ecd8;
             z-index: 10;
             display: flex;
             flex-direction: column;
             align-items: center;
-        }
-
-        .medievalsharp-regular {
-            font-family: "MedievalSharp", cursive;
-            font-weight: 400;
-            font-style: normal;
         }
 
         .unifrakturmaguntia-regular {
@@ -70,7 +64,7 @@
             margin: 0 0 10px;
             text-align: center;
             letter-spacing: 1px;
-            color: #f3efe3;
+            color: #f2ecd8;
         }
 
         .actions {
@@ -85,7 +79,7 @@
         button {
             padding: 10px 12px;
             border: 1px solid #ddd;
-            background: #fff;
+            background: #f2ecd8;
             border-radius: 12px;
             box-shadow: var(--shadow);
             font-weight: 700;
@@ -127,7 +121,7 @@
             padding: 5px;
             border-radius: var(--radius);
             border: 1px solid #e7e7e7;
-            background: #fff;
+            background: #f2ecd8;
             box-shadow: var(--shadow);
             display: flex;
             align-items: center;
@@ -145,17 +139,17 @@
 
         .square.checked {
 
-            background: #2a444d;
-            color: #fff;
-            -webkit-text-fill-color: #fff;
+            background: linear-gradient(138deg, #4b4b4b 0%, #d0d0d0 50%, #4b4b4b 100%);
+            color: #000;
+            -webkit-text-fill-color: #000;
             /* iOS */
         }
 
         /* Squares that are part of a completed line */
         .square.checked.linewin {
-            background: #692751;
-            color: #fff;
-            -webkit-text-fill-color: #fff;
+            background: linear-gradient(45deg, #cb9b51 21%, #f6e27a 45%, #f6f2c0 50%, #f6e27a 55%, #cb9b51 79%);
+            color: #000;
+            -webkit-text-fill-color: #000;
             border-color: #fff;
         }
 
@@ -173,8 +167,8 @@
         .footer {
             padding: 14px;
             text-align: center;
-            color: #000;
-            border-top: 2px dashed #692751;
+            color: #f2ecd8;
+            border-top: 2px dashed #f2ecd8;
         }
 
         /* --- Bingo overlay --- */
@@ -203,6 +197,7 @@
         }
 
         .overlay-title {
+            font-family: "UnifrakturMaguntia", cursive;
             font-size: 28px;
             font-weight: 900;
             letter-spacing: 0.5px;
@@ -263,15 +258,15 @@
         <section class="grid" id="grid" aria-label="Bingo grid"></section>
     </main>
     <footer class="footer">
-        <small>Slay the dragon! 🐉</small>
+        <small>The realm thanks you 🐉</small>
     </footer>
 
     <div id="bingoOverlay" class="overlay" hidden>
         <div class="overlay-card">
-            <div class="overlay-title">BINGO! 🎉</div>
-            <div class="overlay-sub">ur prize is a hangover</div>
+            <div class="overlay-title">🗡️ Bingo! 🗡️</div>
+            <div class="overlay-sub">you have slain the dragon.</div>
             <div class="overlay-actions">
-                <button id="closeOverlayBtn" type="button">Congrats 🥂</button>
+                <button id="closeOverlayBtn" type="button">A toast to the victor! 🍺</button>
             </div>
         </div>
         <div id="confetti" class="confetti" aria-hidden="true"></div>
